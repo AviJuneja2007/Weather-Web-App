@@ -1,0 +1,164 @@
+html,
+body {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: black;
+}
+
+/*-------------------------- BACKGROUND IMAGES AND BACKGROUND COLORS */
+
+.wrap{
+    background-image: url("./images/back-img.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5px;
+    padding-bottom: 45px;
+}
+
+
+.display {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* -------------------------- SEARCH BAR AND BUTTON STYLING */
+
+.search{
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #f1f6f9;
+    font-size: 1.7rem;
+    margin-top: 9px;
+    transition: all 0.5s ease-in-out;
+}
+
+.search:hover{
+    color: #f5b461;
+}
+
+.search:focus{
+    outline: #6bc5d7;
+}
+
+.search-field{
+    outline: #6bc5d7;
+}
+
+/* -----------------MAIN STYLING */
+
+.header-large{
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.date-large{
+    color: white;
+    font-family: "Mali", cursive;
+    font-size: 1rem;
+}
+
+.temp-large{
+    font-family: "Mali", cursive;
+    color: #f1f6f9;
+    font-size: 3em;
+}
+
+.temp-btn{
+    color: white;
+    font-family: "Mali", cursive;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.temp-btn:hover {
+    color: #f5b461;
+}
+
+.temp-btn:focus {
+    outline: #6bc5d7;
+}
+
+.separator{
+    color: #f1f6f9;
+    font-size: 1em;
+}
+
+.description-large{
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+}
+
+.conditions{
+    font-family: "Mali", cursive;
+    color: #f1f6f9;
+    font-size: 1em;
+}
+
+.forecast-icon {
+    width: 50px;
+    height: auto;
+}
+
+.small {
+    margin-top: 20px;
+    color: #f1f6f9;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.small a {
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(141, 41, 235);
+    transition: all 0.5s ease-in-out;
+}
+
+.small a:hover {
+    color: #fff676;
+}
+
+
+.active {
+    color: #f5b461;
+    font-family: "Mali", cursive;
+    font-size: 1.2em;
+    cursor: none;
+    font-weight: bolder;
+}
+
+
+/* -------------------- RESPONSIVE MEDIA QUERIES */
+
+
+@media only screen and (max-width: 768px) {
+    .header-large {
+        font-size: 1.2em;
+    }
+    .temp-large {
+        font-size: 3em;
+    }
+    .description-large {
+        text-align: center;
+        font-size: 1em;
+    }
+    .conditions {
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .forcast-icon {
+        width: 50px;
+        height: auto;
+    }
+}
